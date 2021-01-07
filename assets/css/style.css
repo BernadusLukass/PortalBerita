@@ -4336,12 +4336,11 @@ input[type="button"].btn-block {
 
 .navbar-brand {
     display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
     margin-right: 38px;
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+    margin-top:20px;
 }
 
 .navbar-brand:hover,
@@ -4354,6 +4353,7 @@ input[type="button"].btn-block {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
+    margin-top:15px;
     list-style: none;
 }
 
@@ -10715,7 +10715,7 @@ header .navbar-top .navbar-top-right-menu .nav-item:last-child .nav-link {
 }
 
 header .navbar-bottom {
-    padding-bottom: 24px;
+    padding-bottom: 0px;
 }
 
 @media (max-width: 999px) {
@@ -11308,4 +11308,6 @@ footer .footer-bottom {
 .mr-flash{
     margin-left:-5rem;
 }
+
+
 /*# sourceMappingURL=maps/style.css.map */
