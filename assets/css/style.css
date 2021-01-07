@@ -11298,4 +11298,14 @@ footer .footer-bottom {
     margin-bottom:15px;
 }
 
+.movingtext{
+
+    font-size: 20px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.mr-flash{
+    margin-left:-5rem;
+}
 /*# sourceMappingURL=maps/style.css.map */
