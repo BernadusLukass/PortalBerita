@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>World Time</title>
+    <!-- plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href=".././assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="../assets/vendors/aos/dist/aos.css/aos.css" />
+    <!-- End plugin css for this page -->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- endinject -->
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <div class="main-panel">
+        <!-- partial:../partials/_navbar.html -->
+        <header id="header">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="navbar-bottom navbot">
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                              <h1 style="color:white; padding-top: 23px;">Portal Berita</h1>
+                          </div>
+                          <div>
+                              <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                              <div class="navbar-collapse justify-content-center collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav d-lg-flex justify-content-between align-items-center">
+                                      <li>
+                                          <button class="navbar-close">
+                      <i class="mdi mdi-close"></i>
+                    </button>
+                                      </li>
+                                      <li class="nav-item active">
+                                          <a class="nav-link" href="../indexAdmin.html">Halaman Utama</a>
+                                      </li>
+                                      <li class="nav-item active">
+                                        <a class="nav-link" href="listNews.html">List Berita</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                      <a class="nav-link" href="#">Hi, admin!</a>
+                                  </li>
+                                  <li class="nav-item active">
+                                    <a class="nav-link" href="../index.html" style="color:white"><i class="fa fa-sign-out" style="font-size:24px"></i></a>
+                                  </li>
+                                  </ul>
+                              </div>
+                          </div>
+        
+                      </div>
+                  </div>
+              </nav>
+          </div>
+        </header>
+
+        <!-- isi main -->
+        <div class="content-wrapper">
+          <div class="container">
+            <div class="col-sm-12">
+              <div class="card" data-aos="fade-up">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <center>
+                        <h1 class="font-weight-600 mb-4">
+                          LIST BERITA
+                        </h1>
+                        <!--search berita -->
+                        <form class="example" action="listNewsSearch.html">
+                            <input type="text" placeholder="Search.." name="search">
+                            <a href="listNewsSearch.html" style="color:black"><button><i class="fa fa-search"></i></button></a>
+                        </form>
+                        <br>
+                        <a href="addNews.html"><button type="button" class="btn btn-light"><i class="fa fa-plus-circle" style="font-size:15px"></i>  Add News</button></a>
+                      </center>
+                      <br>
+                    </div>
+                    <!-- tabel -->
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Judul Berita</th>
+                            <th scope="col"><center>Edit</center></th>
+                            <th scope="col"><center>Hapus</center></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Elkan Baggott Dilirik Manchester United dan Everton</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><a href="listNewsHapus.html" style="color:black"><i class="fa fa-trash-o" style="font-size:20px"></i></a></center></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Dilantik, Akun Sandiaga Banjir Ucapan Selamat dari Para Seleb</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><i class="fa fa-trash-o" style="font-size:20px"></i></center></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Sandiaga Uno Ingin Sport Tourism Hadir di 5 Destinasi Super Prioritas</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><i class="fa fa-trash-o" style="font-size:20px"></i></center></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Pemerintah Kantongi Rp 41T dari Lelang 7 Surat Utang Negara</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><i class="fa fa-trash-o" style="font-size:20px"></i></center></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Wall Street Batal Tendang 3 Perusahaan China dari Bursa Saham</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><i class="fa fa-trash-o" style="font-size:20px"></i></center></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Lalu Lintas Pesawat di Dalam Negeri Anjlok 42,66 Persen</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><i class="fa fa-trash-o" style="font-size:20px"></i></center></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>Jawa Sumbang Kasus Tinggi Covid-19, Jatim Kematian Terbanyak</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><i class="fa fa-trash-o" style="font-size:20px"></i></center></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Fanpage FB Fahira Idris Kena Suspend, Unggah Laskar FPI Tewas</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><i class="fa fa-trash-o" style="font-size:20px"></i></center></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>Kemendikbud Bakal Lanjutkan Subsidi Kuota Belajar 2021</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><i class="fa fa-trash-o" style="font-size:20px"></i></center></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>Sandiaga Uno Ingin Sport Tourism Hadir di 5 Destinasi Super Prioritas</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><i class="fa fa-trash-o" style="font-size:20px"></i></center></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">11</th>
+                            <td>Liburan Menyenangkan Budget Murah</td>
+                            <td><center><i class="fa fa-edit" style="font-size:20px"></i></center></td>
+                            <td><center><i class="fa fa-trash-o" style="font-size:20px"></i></center></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main-panel ends -->
+
+        <!-- footer-->
+        <footer>
+          <div class="footer-top" style="padding-left: 550px;">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-5">
+                  <center>
+                  <h1>Portal Berita</h1>
+                  <h5 class="font-weight-normal mt-4 mb-5">
+                    Berita portal adalah situs web berita, hiburan, mode musik Anda. Kita
+                    memberi Anda berita dan video terbaru langsung dari
+                    industri hiburan.
+                  </h5>
+                </div>
+                                                                            <div class="col-sm-4">
+                                                                                <div class="row">
+                                                                                    
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="footer-bottom">
+                                                                    <div class="container">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12">
+                                                                                <div class="d-sm-flex justify-content-between align-items-center">
+                                                                                    <div class="fs-14 font-weight-600" style="padding-left: 490px">
+                                                                                        © 2020 | PT. Portal Berita
+                                                                                    </div>
+                                                                                    <div class="fs-14 font-weight-600">
+                                                                                    </div>
+                                                                                </div>
+                                                                              </center>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </footer>
+
+        <!-- partial -->
+      </div>
+    </div>
+    <!-- inject:js -->
+    <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+
+    <script src="../assets/vendors/aos/dist/aos.js/aos.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page-->
+    <script src="../assets/js/demo.js"></script>
+    <script src="../assets/js/jquery.easeScroll.js"></script>
+    <!-- End custom js for this page-->
+  </body>
+</html>
