@@ -31,60 +31,49 @@
     <link rel="stylesheet" type="text/css" href="../login/vendor/daterangepicker/daterangepicker.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="../login/css/util.css">
-    <link rel="stylesheet" type="text/css" href="../login/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../login/css/main.css">    
+    <link rel = "stylesheet" type="text/css" href = "../assets/css/style.css">
     <!--===============================================================================================-->
 </head>
-
-<body>
-    <div class="limiter">
-        <div class="container-login100">
-            <div class="wrap-login200">
-                <div class="card-heading">
-                    <h2 class="title">Masukkan Berita Terbaru</h2>
-                </div>
-                <div class="card-body">
-                    <form method="POST">
-                        <div class="form-row">
-                            <div class="name">Judul Berita</div>
-
-                            <div class="value">
-                                <input style="border: solid 1px; margin-left: 10px;" class="" type="text" name="full_name">
-                            </div>
+<div class="content-wrapper">
+    <div class="container">
+      <div class="col-sm-12">
+        <div class="card" data-aos="fade-up">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <center>
+                  <h1 class="font-weight-600 mb-4">
+                    Masukkan Berita Terbaru
+                  </h1>
+                  
+                  <!--search berita -->
+                  <form class="example" action="">
+                     <a class = "judul-text">Judul Berita : </a> <input style="border: solid 1px; margin-left: 10px;" class="" type="text" name="full_name">
+                     <br><br>
+                     <a class = "upload-text">Upload Gambar : </a><input class="input-file" type="file" name="file_cv" id="file">
+                     <Br>
+                     <a class = "upload-desc">Upload gambar/foto yang berkaitan dengan berita anda. Ukuran maksimal file 50 MB</a>
+                     <br>
+                     <a class = "ta-text">Text Berita :</a> <textarea class="ta" placeholder="Masukkan Berita"></textarea>
+                     <Br><br>
+                        <div class="card-footer">
+                            <button class="btn btn--radius-2 btn--blue-2" type="submit">Cancel</button>
+                            <button class="btn btn--radius-2 btn--blue-2" type="submit">Publish</button>
                         </div>
-
-                        <div class="form-row">
-                            <div class="name">Upload Gambar</div>
-                            <div class="value">
-                                <div class="input-group js-input-file">
-                                    <input class="input-file" type="file" name="file_cv" id="file">
-
-                                </div>
-
-                                <div class="label--desc">Upload gambar/foto yang berkaitan dengan berita anda. Ukuran maksimal file 50 MB</div>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="name">Text Berita</div>
-                            <br>
-                            <div class="value">
-                                <div class="input-group">
-
-                                    <textarea style="margin-left: -80px; margin-top: 20px; width: 300px;" class="" name="message" placeholder="Masukkan Berita"></textarea>
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn--radius-2 btn--blue-2" type="submit">Cancel</button>
-                    <button class="btn btn--radius-2 btn--blue-2" type="submit">Publish</button>
-                </div>
-
+                  </form>
+                  <br>
+                </center>
+                <br>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </div>
+<body>
+   
+
 
 </html>

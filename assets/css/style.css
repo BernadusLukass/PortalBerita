@@ -11309,5 +11309,26 @@ footer .footer-bottom {
     margin-left:-5rem;
 }
 
+.upload-desc{
+    margin-left:-175px;
+    font-size: 10px;
+}
 
+.ta{
+    margin-top:20px;
+    width:300px;
+    height:100px;
+}
+
+.ta-text{
+    margin-left:-400px;
+}
+
+.upload-text{
+    margin-left:-480px;
+}
+
+.judul-text{
+    margin-left:-535px;
+}
 /*# sourceMappingURL=maps/style.css.map */
