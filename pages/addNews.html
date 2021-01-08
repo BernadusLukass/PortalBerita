@@ -31,49 +31,157 @@
     <link rel="stylesheet" type="text/css" href="../login/vendor/daterangepicker/daterangepicker.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="../login/css/util.css">
-    <link rel="stylesheet" type="text/css" href="../login/css/main.css">    
-    <link rel = "stylesheet" type="text/css" href = "../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../login/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
 </head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="navbar-bottom navbot">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h1 style="color:white; padding-top: 23px;">Portal Berita</h1>
+                        </div>
+                        <div>
+                            <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                            <div class="navbar-collapse justify-content-center collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav d-lg-flex justify-content-between align-items-center">
+                                    <li>
+                                        <button class="navbar-close">
+                    <i class="mdi mdi-close"></i>
+                  </button>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="../indexAdmin.html">Halaman Utama</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="listNews.html">List Berita</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Hi, admin!</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
 <div class="content-wrapper">
     <div class="container">
-      <div class="col-sm-12">
-        <div class="card" data-aos="fade-up">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-sm-12">
-                <center>
-                  <h1 class="font-weight-600 mb-4">
-                    Masukkan Berita Terbaru
-                  </h1>
-                  
-                  <!--search berita -->
-                  <form class="example" action="">
-                     <a class = "judul-text">Judul Berita : </a> <input style="border: solid 1px; margin-left: 10px;" class="" type="text" name="full_name">
-                     <br><br>
-                     <a class = "upload-text">Upload Gambar : </a><input class="input-file" type="file" name="file_cv" id="file">
-                     <Br>
-                     <a class = "upload-desc">Upload gambar/foto yang berkaitan dengan berita anda. Ukuran maksimal file 50 MB</a>
-                     <br>
-                     <a class = "ta-text">Text Berita :</a> <textarea class="ta" placeholder="Masukkan Berita"></textarea>
-                     <Br><br>
-                        <div class="card-footer">
-                            <button class="btn btn--radius-2 btn--blue-2" type="submit">Cancel</button>
-                            <button class="btn btn--radius-2 btn--blue-2" type="submit">Publish</button>
-                        </div>
-                  </form>
-                  <br>
-                </center>
-                <br>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<body>
-   
+        <div class="col-sm-12">
+            <div class="card" data-aos="fade-up">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <h1 class="font-weight-600 mb-4">
+                                    Masukkan Berita Terbaru
+                                </h1>
 
+                                <!--search berita -->
+                                <form class="example" action="">
+
+                                    <a style="margin-left: -410px; " class="judul-text">Judul Berita : </a> <input style="border: solid 1px; margin-left: 0px;" class="" type="text" name="full_name">
+
+                                    <div style="float: right;" class="dropdown">
+                                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             Category
+                                            </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Bisnis</a>
+                                            <a class="dropdown-item" href="#">Politik</a>
+                                            <a class="dropdown-item" href="#">Olahraga</a>
+                                            <a class="dropdown-item" href="#">Wisata</a>
+                                        </div>
+                                    </div>
+
+
+                                    <br><br>
+                                    <div style="margin-left: -180px;">
+                                        <a class="upload-text">Upload Gambar : </a><input style="margin-left: -80px; margin-top: -25px;" class="input-file" type="file" name="file_cv" id="file">
+                                    </div>
+                                    <Br>
+                                    <a class="upload-desc">Upload gambar/foto yang berkaitan dengan berita anda. Ukuran maksimal file 50 MB</a>
+                                    <br>
+                                    <div style="width: 55%;" class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <br>
+                                    <a class="ta-text">Text Berita :</a> <textarea style="border: solid 1px;" class="ta" placeholder="Masukkan Berita"></textarea>
+                                    <Br><br>
+                                    <a href="../indexAdmin.html"><button   style =" padding: 10px; border-radius: 15px; color: black;" class="btn btn-danger">
+                                                    Cancel
+                                                </button></a>
+
+                                    <a href="../indexAdmin.html"><button style="margin-left: 100px;  padding: 10px; border-radius: 15px; padding-right: 10px;color: black;" class="btn btn-success">
+                                                    Publish
+                                                </button></a>
+                        </div>
+                        </form>
+                        <br>
+                        </center>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<footer>
+    <div class="footer-top" style="padding-left: 550px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <center>
+                        <h1>Portal Berita</h1>
+                        <h5 class="font-weight-normal mt-4 mb-5">
+                            Berita portal adalah situs web berita, hiburan, mode musik Anda. Kita memberi Anda berita dan video terbaru langsung dari industri hiburan.
+                        </h5>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="d-sm-flex justify-content-between align-items-center">
+                        <div class="fs-14 font-weight-600" style="padding-left: 490px">
+                            © 2020 | PT. Portal Berita
+                        </div>
+                        <div class="fs-14 font-weight-600">
+                        </div>
+                    </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- partial -->
+</div>
+</div>
 
 </html>
