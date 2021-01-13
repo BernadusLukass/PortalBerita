@@ -10960,7 +10960,7 @@ header .navbar-bottom .navbar-toggler {
 }
 
 .flash-news-banner {
-    background: #ffffff;
+    background: #000000;
     padding: 20px 0px;
 }
 
@@ -11299,7 +11299,7 @@ footer .footer-bottom {
 }
 
 .movingtext{
-
+color:white;
     font-size: 20px; 
     display: flex;
     justify-content: space-between;
@@ -11343,4 +11343,5 @@ footer .footer-bottom {
 .bottom-footer{
     margin-left:100px;
 }
+
 /*# sourceMappingURL=maps/style.css.map */
