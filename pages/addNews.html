@@ -104,10 +104,17 @@
                                       <label for="exampleFormControlInput1">Judul Berita :</label>
                                       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan judul berita">
                                     </div>
+
+
                                     <div class="form-group">
                                         <label for="exampleFormControlFile1">Upload Gambar :</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" onchange="move()"/>
                                     </div>
+
+                                    
+                                    <div id="myProgress">
+                                        <div id="myBar"></div>
+                                      </div>
                                     
                                     <div class="progress">
                                         <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="50" aria-valuemax="100"></div>
@@ -187,6 +194,26 @@
                                                               </div>
                                                           </div>
                                                           </footer>
+<script>
+    var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+</script>
 
 </body>
 </html>

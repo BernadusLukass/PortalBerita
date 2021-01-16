@@ -11344,4 +11344,14 @@ color:white;
     margin-left:100px;
 }
 
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #4CAF50;
+  }
 /*# sourceMappingURL=maps/style.css.map */
